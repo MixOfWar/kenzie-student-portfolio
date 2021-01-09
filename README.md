@@ -1,6 +1,9 @@
 This is a project building portfolios for Kenzie Academy students and alumni bridging the gap between graduation and a
 presentable portfolio
 
+Team: Ryne Tate: Project Manager/ Scrum Master, Jordan Burke: UX Lead, Fredo Sieck: QA & Demo Lead, Mia Peace: Coding
+Lead
+
 ## Available Scripts
 
 In the project directory, you can run:
