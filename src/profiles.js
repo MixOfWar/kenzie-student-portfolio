@@ -21,7 +21,8 @@ const userProfiles = [
 	{
 		id: 9181,
 		name: 'Mia Peace',
-		image: require('./assets/miapeace.jpg'),
+		image: '../src/assets/miapeace.jpg',
+		// Todo -- fix images import for data structures
 		role: 'Front End Developer',
 		about:
 			'Cultivating a passion for technology from a young age I have pushed myself to focus on the visual format as well as the accessibility of technology. Moving forward within this world requires that we carefully tend to the way content is presented to reach many and encourage the development of a table that not only includes all but bolsters diversity. Through this strategy, we enrich the environment around us and nourish new innovative ideas to move technology forward. Beyond my love for technology, I am a disability advocate, an outdoor enthusiast, a reader, a writer, a dancer, and a singing lover of life. I know that by keeping our lives rounded and our mind entrenched in learning we can move forward in a positive way, bringing out not only the best in ourselves but in those around us. My goals are to be a decisive designer and a valuable team member always striving for not only my best but the best from my team. I enjoy working with others and love when design can be refined within an attainable scope.',
@@ -45,8 +46,9 @@ const userProfiles = [
 		projects: [
 			{
 				type: 0,
-				title: '',
-				text: '',
+				title: 'My first project',
+				text:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo turpis, dapibus eget lectus at, pellentesque aliquam tellus. Pellentesque ut pulvinar quam. Duis eget eros eu mauris iaculis bibendum. Etiam vulputate elementum augue, non iaculis arcu laoreet et. Mauris et vulputate lorem, in auctor orci. Fusce eget nibh eget lorem vulputate condimentum ornare fermentum magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean varius dui et faucibus porttitor. Ut sit amet vulputate orci. Vestibulum consequat arcu et metus dapibus, ut elementum neque volutpat.',
 				images: false,
 			},
 		],
@@ -55,7 +57,7 @@ const userProfiles = [
 	{
 		id: 528,
 		name: 'Ryne Tate',
-		image: require('./assets/rynetate-avatar.jpg'),
+		image: require('./assets/rynetate-avatar.JPG'),
 		role: 'UX Designer/Front-End Developer',
 		about: '30-something toy geek. Analytical and social.',
 		highlights: 'Managed to graduate from Kenzie Academy during a pandemic. Watched all of Star Wars Rebels.',
@@ -88,7 +90,7 @@ const userProfiles = [
 	{
 		id: 394,
 		name: 'Jordan Burke',
-		image: require('./assets/jordanburke.jpg'),
+		image: require('./assets/jordanburke.jpeg'),
 		role: 'UX Designer/ Front-End Dev',
 		about:
 			'I am a UX Engineer with a background in graphic design! I enjoy getting to the bottom of difficult problems and creating human centered solutions! ',
