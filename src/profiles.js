@@ -2,7 +2,7 @@ const userProfiles = [
 	{
 		id: 7426,
 		name: 'Fredo Sieck',
-		image: require('./assets/fms-avatar.jpeg'),
+		image: require('./assets/fms-avatar.jpeg').default,
 		role: '',
 		about: '',
 		highlights: '',
@@ -11,8 +11,8 @@ const userProfiles = [
 		projects: [
 			{
 				type: 0,
-				title: '',
-				text: '',
+				title: 'test title',
+				text: 'test text',
 				images: false,
 			},
 		],
@@ -21,7 +21,7 @@ const userProfiles = [
 	{
 		id: 9181,
 		name: 'Mia Peace',
-		image: '../src/assets/miapeace.jpg',
+		image: require('./assets/miapeace.jpg').default,
 		// Todo -- fix images import for data structures
 		role: 'Front End Developer',
 		about:
@@ -57,7 +57,7 @@ const userProfiles = [
 	{
 		id: 528,
 		name: 'Ryne Tate',
-		image: require('./assets/rynetate-avatar.JPG'),
+		image: require('./assets/rynetate-avatar.JPG').default,
 		role: 'UX Designer/Front-End Developer',
 		about: '30-something toy geek. Analytical and social.',
 		highlights: 'Managed to graduate from Kenzie Academy during a pandemic. Watched all of Star Wars Rebels.',
@@ -90,7 +90,7 @@ const userProfiles = [
 	{
 		id: 394,
 		name: 'Jordan Burke',
-		image: require('./assets/jordanburke.jpeg'),
+		image: require('./assets/jordanburke.jpeg').default,
 		role: 'UX Designer/ Front-End Dev',
 		about:
 			'I am a UX Engineer with a background in graphic design! I enjoy getting to the bottom of difficult problems and creating human centered solutions! ',

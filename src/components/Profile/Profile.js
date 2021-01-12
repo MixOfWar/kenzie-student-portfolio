@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { withRouter } from 'react-router-dom';
 
-const Profile = ({ profiles }) => {
+const Profile = (props) => {
+	const [thisUser, setThisUser] = useState([]);
+	useEffect(
+		() => {
+			setThisUser(props.profiles.find((profiles) => profiles.id === Number(props.match.params.id)));
+		}, // eslint-disable-next-line
+		[],
+	);
+
 	return (
 		<div className='profile'>
 			<section className='hero'>
@@ -12,28 +21,37 @@ const Profile = ({ profiles }) => {
 					</ul>
 				</div>
 				<div className='bio'>
-					<h1>{   .name}</h1>
-					<p>{profiles[1].role}</p>
-					<img src={profiles[1].image} alt='profile' />
+					<h1>{thisUser.name}</h1>
+					<p>{thisUser.role}</p>
+					<img className='avatar' src={thisUser.image} alt='profile' />
 				</div>
 				<div className='highlight'>
-					<p>{profiles[1].highlights}</p>
+					<p>{thisUser.highlights}</p>
 				</div>
 			</section>
 			<section className='about'>
 				<h2 className='tab'>About Me</h2>
-				<p>{profiles[1].about}</p>
+				<p>{thisUser.about}</p>
+			</section>
+			<section className='skills'>
+				<h2 className='tab'>Skills</h2>
+				<p>{thisUser.skills}</p>
 			</section>
 			<section className='projects'>
 				<h2 className='tab'>Projects</h2>
-				<div className='image'>Project Image here</div>
-				<p>{profiles[1].projects[0].title}</p>
-				<p>{profiles[1].projects[0].text.substring(0, 150)}</p>
+				<ul>
+					{/* {thisUser.projects.map((project) => (
+						<li>
+							<p>{project.title}</p>
+							<p>{project.text.substring(0, 150)}</p>
+						</li>
+					))} */}
+				</ul>
 			</section>
 			<section className='contact'>
 				<h2 className='tab'>Contact Me</h2>
 				<div>
-					<p>{profiles[1].contact}</p>
+					<p>{thisUser.contact}</p>
 					<p>Website Link Here</p>
 				</div>
 				<div>User Image Here</div>
@@ -42,4 +60,4 @@ const Profile = ({ profiles }) => {
 	);
 };
 
-export default Profile;
+export default withRouter(Profile);

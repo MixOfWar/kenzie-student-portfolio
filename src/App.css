@@ -87,6 +87,12 @@ section {
 
 .App .profile .hero .bio {
 	width: 50%;
+	text-align: center;
+}
+
+.App .profile .hero .avatar {
+	width: 50%;
+	border-radius: 100%;
 }
 
 .App .profile .hero .highlight {
@@ -99,8 +105,8 @@ section {
 }
 
 .App .profile .tab {
-	width: 150px;
-	height: 60px;
+	width: 20%;
+	padding: 10px;
 	color: white;
 	background: #00356b;
 	display: flex;

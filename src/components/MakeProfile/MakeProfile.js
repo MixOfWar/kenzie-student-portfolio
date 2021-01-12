@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 const MakeProfile = () => {
 
@@ -9,4 +10,4 @@ const MakeProfile = () => {
   )
 }
 
-export default MakeProfile;
+export default withRouter(MakeProfile);

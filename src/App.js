@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import profiles from './profiles.js';
 import Header from './components/Header/Header.js';
@@ -11,9 +12,14 @@ const App = () => {
 	return (
     <div className='App'>
       <Header />
-      <h1>Kenzie Showcase</h1>
-      <Profile profiles={userProfiles} />
-      <MakeProfile profiles={userProfiles} />
+      <Switch>
+        <Route exact path="/edit">
+          <MakeProfile profiles={userProfiles} />
+        </Route>
+        <Route exact path='/profile/:id'>
+          <Profile profiles={userProfiles} />
+        </Route>
+      </Switch>
 		</div>
 	);
 }
