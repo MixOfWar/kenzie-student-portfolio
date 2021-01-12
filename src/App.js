@@ -5,23 +5,28 @@ import profiles from './profiles.js';
 import Header from './components/Header/Header.js';
 import MakeProfile from './components/MakeProfile/MakeProfile.js';
 import Profile from './components/Profile/Profile.js';
-
+import Directory from './components/Directory/Directory.js';
 
 const App = () => {
-  const [userProfiles, setUserProfiles] = useState(profiles);
+	const [userProfiles, setUserProfiles] = useState(profiles);
+	const [loggedIn, setLoggedIn] = useState(userProfiles[0]);
+
 	return (
-    <div className='App'>
-      <Header />
-      <Switch>
-        <Route exact path="/edit">
-          <MakeProfile profiles={userProfiles} />
-        </Route>
-        <Route exact path='/profile/:id'>
-          <Profile profiles={userProfiles} />
-        </Route>
-      </Switch>
+		<div className='App'>
+			<Header loggedIn={loggedIn} />
+			<Switch>
+				<Route exact path='/edit'>
+					<MakeProfile profiles={userProfiles} />
+				</Route>
+				<Route exact path='/profile/:id'>
+					<Profile profiles={userProfiles} />
+				</Route>
+				<Route exact path='/directory'>
+					<Directory profiles={userProfiles} />
+				</Route>
+			</Switch>
 		</div>
 	);
-}
+};
 
 export default App;

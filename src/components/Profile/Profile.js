@@ -35,7 +35,7 @@ const Profile = (props) => {
 			</section>
 			<section className='skills'>
 				<h2 className='tab'>Skills</h2>
-				<p>{thisUser.skills}</p>
+				{/* <p>{thisUser.skill s.join(', ')}</p> */}
 			</section>
 			<section className='projects'>
 				<h2 className='tab'>Projects</h2>
@@ -54,7 +54,7 @@ const Profile = (props) => {
 					<p>{thisUser.contact}</p>
 					<p>Website Link Here</p>
 				</div>
-				<div>User Image Here</div>
+				<img className='avatar' src={thisUser.image} alt='profile' />
 			</section>
 		</div>
 	);
