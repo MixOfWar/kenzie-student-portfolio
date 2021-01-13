@@ -57,8 +57,9 @@ section {
 }
 
 .App .header .loggedAvatar {
-	width: 75px;
-	height: 75px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #00356b;
 	border-radius: 100%;
 }
 
@@ -145,6 +146,41 @@ section {
 	padding: 10px;
 }
 
-.App .Directory .avatar {
-	width: 25%;
+.App .Directory .directoryHero {
+	background: url();
+	height: 500px;
+	width: 100%;
+}
+
+.App .Directory .students {
+	width: 100%;
+}
+
+.App .Directory .students ul {
+	list-style: none;
+}
+
+.App .Directory .students ul li {
+	display: flex;
+	align-items: center;
+	margin: 25px 0;
+	padding: 5px;
+	background: #f2f5f8;
+	color: #00356b;
+}
+
+.App .Directory .students .img {
+	width: 200px;
+	margin: 0 25px 0 0;
+}
+
+.App .Directory .students .img .avatar {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	margin: auto;
+}
+
+.App .Directory .students .info .aboutInfo {
+	font-size: 18px;
 }

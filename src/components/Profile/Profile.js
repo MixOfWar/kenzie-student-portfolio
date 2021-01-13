@@ -2,13 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { withRouter } from 'react-router-dom';
 
 const Profile = (props) => {
-	const [thisUser, setThisUser] = useState([]);
-	useEffect(
-		() => {
-			setThisUser(props.profiles.find((profiles) => profiles.id === Number(props.match.params.id)));
-		}, // eslint-disable-next-line
-		[],
-	);
+	const thisUser = (props.profiles.find((profiles) => profiles.id === Number(props.match.params.id)));
 
 	return (
 		<div className='profile'>
@@ -35,17 +29,17 @@ const Profile = (props) => {
 			</section>
 			<section className='skills'>
 				<h2 className='tab'>Skills</h2>
-				{/* <p>{thisUser.skill s.join(', ')}</p> */}
+				<p>{thisUser.skills.join(', ')}</p>
 			</section>
 			<section className='projects'>
 				<h2 className='tab'>Projects</h2>
 				<ul>
-					{/* {thisUser.projects.map((project) => (
+					{thisUser.projects.map((project) => (
 						<li>
 							<p>{project.title}</p>
 							<p>{project.text.substring(0, 150)}</p>
 						</li>
-					))} */}
+					))}
 				</ul>
 			</section>
 			<section className='contact'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 const logo = require('../../assets/Kenzie_Showcase_Logo.png').default;
 
 const Header = ({ loggedIn }) => {
@@ -8,8 +9,8 @@ const Header = ({ loggedIn }) => {
 			<input type='text' placeholder='&#128269; Find Something Awesome ...'></input>
 			<nav>
 				<ul>
-					<li>Directory</li>
-					<li>My Portfolio</li>
+					<NavLink exact to='/directory'>Directory</NavLink>
+					<NavLink exact to='/profile/7426'>My Portfolio</NavLink>
 					<li>My Assets</li>
 				</ul>
 				<img className='loggedAvatar' src={loggedIn.image} alt='user avatar' />
