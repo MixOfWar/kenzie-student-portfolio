@@ -12,6 +12,7 @@ const userProfiles = [
 		projects: [
 			{
 				type: 0,
+				id: 1,
 				title: 'test title',
 				text: 'test text',
 				images: false,
@@ -47,10 +48,11 @@ const userProfiles = [
 		projects: [
 			{
 				type: 0,
+				id: 1,
 				title: 'My first project',
 				text:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo turpis, dapibus eget lectus at, pellentesque aliquam tellus. Pellentesque ut pulvinar quam. Duis eget eros eu mauris iaculis bibendum. Etiam vulputate elementum augue, non iaculis arcu laoreet et. Mauris et vulputate lorem, in auctor orci. Fusce eget nibh eget lorem vulputate condimentum ornare fermentum magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean varius dui et faucibus porttitor. Ut sit amet vulputate orci. Vestibulum consequat arcu et metus dapibus, ut elementum neque volutpat.',
-				images: false,
+				images: require('./assets/planetary_background.jpg').default,
 			},
 		],
 		contact: 'mrssilentwar@gmail.com',
@@ -73,6 +75,7 @@ const userProfiles = [
 		projects: [
 			{
 				type: 1,
+				id: 1,
 				text: '',
 				briefImg: '',
 				outline: '',
@@ -138,6 +141,7 @@ const userProfiles = [
 		projects: [
 			{
 				type: 1,
+				id: 1,
 				text: '',
 				briefImg: '',
 				outline: '',

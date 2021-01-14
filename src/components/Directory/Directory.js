@@ -1,20 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { DirectoryHero, ProfileCard } from '../../Styles.js';
 
 const Directory = ({ profiles }) => {
 	return (
 		<div className='Directory'>
-			<section className='directoryHero'>
-				<p>
+			<DirectoryHero>
+				<h2>
 					Want to know what we work on here at Kenzie Academy? Take a look at some of our amazing students and the
 					projects they've worked on!
-				</p>
-			</section>
+				</h2>
+			</DirectoryHero>
 			<section className='students'>
 				<ul>
 					{profiles.map((profile) => (
 						<Link to={`/profile/${profile.id}`}>
-							<li key={profile.id}>
+							<ProfileCard key={profile.id}>
 								<div className='img'>
 									<img className='avatar' src={profile.image} alt={profile.name} />
 								</div>
@@ -30,7 +31,7 @@ const Directory = ({ profiles }) => {
 										<p>{profile.about.substring(0, 148)}</p>
 									</div>
 								</div>
-							</li>
+							</ProfileCard>
 						</Link>
 					))}
 				</ul>

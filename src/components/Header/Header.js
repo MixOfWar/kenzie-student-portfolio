@@ -9,9 +9,15 @@ const Header = ({ loggedIn }) => {
 			<input type='text' placeholder='&#128269; Find Something Awesome ...'></input>
 			<nav>
 				<ul>
-					<NavLink exact to='/directory'>Directory</NavLink>
-					<NavLink exact to='/profile/7426'>My Portfolio</NavLink>
-					<li>My Assets</li>
+					<NavLink exact to='/directory'>
+						Directory
+					</NavLink>
+					<NavLink exact to='/profile/7426'>
+						My Portfolio
+					</NavLink>
+					<NavLink exact to='/'>
+						My Assets
+					</NavLink>
 				</ul>
 				<img className='loggedAvatar' src={loggedIn.image} alt='user avatar' />
 			</nav>

@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
+import { Tab, EditButton, ProjectSection, ProjectCard, ContactSection, SkillList } from '../../Styles.js';
 
 const Profile = (props) => {
-	const thisUser = (props.profiles.find((profiles) => profiles.id === Number(props.match.params.id)));
+	const [thisUser, setThisUser] = useState({});
+
+	useEffect(() => {
+		setThisUser(props.profiles.find((profile) => profile.id === Number(props.match.params.id)) || {});
+
+		// eslint-disable-next-line
+	}, [props.match.params.id]);
 
 	return (
 		<div className='profile'>
 			<section className='hero'>
+				{props.loggedIn.id === Number(props.match.params.id) ? <EditButton>Edit</EditButton> : null}
 				<div className='miniNav'>
 					<ul>
 						<li>Projects</li>
@@ -24,32 +32,41 @@ const Profile = (props) => {
 				</div>
 			</section>
 			<section className='about'>
-				<h2 className='tab'>About Me</h2>
+				<Tab>About Me</Tab>
+				<br />
 				<p>{thisUser.about}</p>
 			</section>
 			<section className='skills'>
-				<h2 className='tab'>Skills</h2>
-				<p>{thisUser.skills.join(', ')}</p>
+				<Tab>Skills</Tab>
+				<SkillList>{thisUser.skills && thisUser.skills.map((skill) => <li>{skill}</li>)}</SkillList>
 			</section>
-			<section className='projects'>
-				<h2 className='tab'>Projects</h2>
+			<ProjectSection>
+				<Tab>Projects</Tab>
 				<ul>
-					{thisUser.projects.map((project) => (
-						<li>
-							<p>{project.title}</p>
-							<p>{project.text.substring(0, 150)}</p>
-						</li>
-					))}
+					{thisUser.projects &&
+						thisUser.projects.map((project) => (
+							<Link to={`/profile/${thisUser.id}/${project.type}/${project.id}`}>
+								<ProjectCard>
+									<img src={project.images} alt='planetary background' />
+									<p>{project.title}</p>
+									<p>{project.text.substring(0, 150)}</p>
+								</ProjectCard>
+							</Link>
+						))}
 				</ul>
-			</section>
-			<section className='contact'>
-				<h2 className='tab'>Contact Me</h2>
+			</ProjectSection>
+			<ContactSection>
 				<div>
-					<p>{thisUser.contact}</p>
-					<p>Website Link Here</p>
+					<Tab>Contact Me</Tab>
+					<div>
+						<p>{thisUser.contact}</p>
+						<p>Website Link Here</p>
+					</div>
 				</div>
-				<img className='avatar' src={thisUser.image} alt='profile' />
-			</section>
+				<div>
+					<img className='avatar' src={thisUser.image} alt='profile' />
+				</div>
+			</ContactSection>
 		</div>
 	);
 };
