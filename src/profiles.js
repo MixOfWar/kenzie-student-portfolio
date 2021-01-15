@@ -1,3 +1,5 @@
+import { FormatAlignCenter } from '@material-ui/icons';
+
 const userProfiles = [
 	{
 		id: 7426,
@@ -5,24 +7,26 @@ const userProfiles = [
 		image: require('./assets/fms-avatar.jpeg').default,
 		role: 'UX Designer / Front End Dev',
 		cohort: 'UX6 January-2020',
-		about: '',
-		highlights: '',
-		skills: [],
+		about:
+			'Multi-talented creative individual with a deep desire for discovering new ideas, concepts, and efficient logical workflows',
+		highlights: 'Persevering in a time of uncertainty and anguish',
+		skills: ['Efficiency', 'Empathy', 'HTML', 'CSS', 'Video production', 'Music production'],
 		education: [],
 		projects: [
 			{
 				type: 0,
 				id: 1,
-				title: 'test title',
-				outline: 'test text',
-				problem: '',
-				wrapUp: '',
-				wrapUpImg: '',
-				images: [],
+				title: 'Minerva',
+				outline: 'Ethically-sourced e-commerce website',
+				problem: 'Find a way to ethically source an e-commerce website',
+				wrapUp:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo turpis, dapibus eget lectus at, pellentesque aliquam tellus. Pellentesque ut pulvinar quam. Duis eget eros eu mauris iaculis bibendum.',
+				wrapUpImg: require('./assets/minerva2.png').default,
+				images: [require('./assets/minerva1.png').default],
 				links: [],
 			},
 		],
-		contact: '',
+		contact: 'fmsieck@gmail.com',
 	},
 	{
 		id: 9181,
@@ -62,9 +66,7 @@ const userProfiles = [
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo turpis, dapibus eget lectus at, pellentesque aliquam tellus. Pellentesque ut pulvinar quam. Duis eget eros eu mauris iaculis bibendum.',
 				wrapUpImg: require('./assets/nebula.jpg').default,
 				images: [require('./assets/planetary_background.jpg').default],
-				links: [
-					'https://thesilentwars.netlify.app/', 'https://github.com/mrssilentwar/kenzie-student-portfolio',
-				],
+				links: ['https://thesilentwars.netlify.app/', 'https://github.com/mrssilentwar/kenzie-student-portfolio'],
 			},
 		],
 		contact: 'mrssilentwar@gmail.com',
@@ -88,34 +90,35 @@ const userProfiles = [
 			{
 				type: 1,
 				id: 1,
-				problem: '',
-				problemImg: '',
-				outline: '',
-				images: '',
+				title: 'Forage',
+				problem:
+					'Finding action figures can be incredibly difficult with highly demanded and often store exclusive items. We need a way for collectors to help each other by surveying their local stores and notifying other users when items they desire are nearby.',
+				problemImg: require('./assets/Forage-CrowdSearch.png').default,
+				outline:
+					'An app designed for collectors to crowdsource finding and obtaining new items and to keep an updated inventory of their collection to share with each other.',
+				images: require('./assets/Forage.png').default,
 				process: [
 					{
-						text: '',
-						image: '',
+						text:
+							'It was difficult to come up with a way to neatly display so many items in a way that is not overwhelming to the eye.',
+						image: require('./assets/Forage-Hooks.png').default,
 					},
 					{
-						text: '',
-						image: '',
+						text: 'The process though did teach me of better ways to categorize items and filter them.',
+						image: require('./assets/Forage-CrowdSearch.png').default,
 					},
 				],
-				outcome: '',
-				outcomeImg: '',
+				outcome:
+					'Forage will aid collectors in attaining and maintaining their collections in a fun and repeatable process.',
+				outcomeImg: require('./assets/Forage.png').default,
 				nextSteps: [
 					{
-						text: '',
-						image: '',
+						text: 'I would try to find ways to disincentivize fraud by users.',
+						image: require('./assets/Forage-CrowdSearch.png').default,
 					},
 					{
-						text: '',
-						image: '',
-					},
-					{
-						text: '',
-						image: '',
+						text: 'I learned how a long user flow might work and create a useful and appealing loop for the user.',
+						image: require('./assets/Forage-Hooks.png').default,
 					},
 				],
 				links: [],
@@ -173,9 +176,11 @@ const userProfiles = [
 			{
 				type: 1,
 				id: 1,
+				title: 'Skipline',
 				problem: '',
 				problemImg: '',
-				outline: '',
+				outline:
+					'SkipLine, the premier virtual ticketing and payment system for events! Event attendees get tickets, purchase merchandise and concessions all in one place! Event managers create and edit new events in real time.',
 				images: '',
 				process: [
 					{
@@ -187,7 +192,8 @@ const userProfiles = [
 						image: '',
 					},
 				],
-				outcome: '',
+				outcome:
+					'This project was both challenging and rewarding in that it really forced me to think through every step of my design process. It was critical that the needs of each user type be addressed from a singular point of view even though we were creating a single solution for both. In terms of working on a team, from whiteboard to final product, it was important to quickly assess the strengths of each of my team members and figure out how to mesh our varying design styles and preferences quickly. Communicating with the product manager with specific questions allowed us to walk away from those meetings with a clear understanding of what the next steps would be, and who would be assigned each task. I found that while the work and the content is crucial to the final product, expressing empathy towards my team members, down to the times we would meet with consideration to outside obligations, was a great part of our success as a team.',
 				outcomeImg: '',
 				nextSteps: [
 					{
@@ -198,15 +204,37 @@ const userProfiles = [
 						text: '',
 						image: '',
 					},
-					{
-						text: '',
-						image: '',
-					},
 				],
-				links: [],
+				links: ['https://docs.google.com/presentation/d/1iIFPfuepp6efOr-AJnB2ja-wXy34qF7gZQR8WOtu6Qg/edit?usp=sharing'],
 			},
 		],
 		contact: 'jordan.burke394@gmail.com',
+	},
+	{
+		id: 1129,
+		name: 'Natassja Jordan',
+		image: require('./assets/NatassjaJordan.jpg').default,
+		role: 'UX Design',
+		cohort: 'UX6 January-2020',
+		about:
+			'A UX Designer with a background in Media & Entertainment. Natassja uses her experience leading teams and creating content to craft intuitive, digital experiences.',
+		highlights: '',
+		skills: ['HTML', 'CSS', 'SASS', 'SCSS', 'JavaScript', 'React'],
+		education: [],
+		projects: [
+			{
+				type: 0,
+				id: 1,
+				title: 'My example project',
+				outline: '',
+				problem: '',
+				wrapUp: '',
+				wrapUpImg: '',
+				images: [],
+				links: [],
+			},
+		],
+		contact: '',
 	},
 ];
 

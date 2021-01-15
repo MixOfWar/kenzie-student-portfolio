@@ -10,6 +10,7 @@ const DirectoryHero = styled.section`
 	h2 {
 		font-size: 24px;
 		padding: 50px 0 50px 50%;
+		color: white;
 	}
 
 	@media (min-width: 750px) {
@@ -46,7 +47,7 @@ const Tab = styled.h2`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 	svg {
 	}
 `;
@@ -123,7 +124,10 @@ const WrapUpSection = styled.section`
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
-	h2 {
+	justify-content: center;
+	align-items: center;
+	h2,
+	h3 {
 		width: 100%;
 		margin: 50px;
 		text-align: center;
@@ -142,6 +146,37 @@ const ProjectLinks = styled.section`
 	text-align: center;
 `;
 
+const PictureTextSection = styled.section`
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	div {
+		width: 50%;
+		img {
+			width: 100%;
+		}
+	}
+	div:nth-of-type(2) {
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+`;
+
+const NextStepsContainers = styled.div`
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	img {
+		width: 80%;
+		margin: auto;
+	}
+`;
+
 export {
 	DirectoryHero,
 	ProfileCard,
@@ -154,4 +189,6 @@ export {
 	ProjectHero,
 	WrapUpSection,
 	ProjectLinks,
+	PictureTextSection,
+	NextStepsContainers,
 };

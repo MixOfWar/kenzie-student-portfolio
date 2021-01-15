@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { ProjectHero, Tab, WrapUpSection, ProjectLinks } from '../../Styles.js';
 
 const ProjectSE = (props) => {
@@ -11,7 +11,6 @@ const ProjectSE = (props) => {
 				.find((profile) => profile.id === Number(props.match.params.user_id))
 				.projects.find((project) => project.id === Number(props.match.params.proj_id)) || {},
 		);
-
 		// eslint-disable-next-line
 	}, [props.match.params.user_id, props.match.params.proj_id]);
 

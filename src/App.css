@@ -22,9 +22,15 @@ a:hover {
 	cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Kadwa', serif;
 	font-weight: 700;
+	margin: 25px;
 }
 
 p {
@@ -180,10 +186,21 @@ img {
 	width: 100%;
 }
 
+/* Project */
 
-/* ProjectSE */
-
-.App .projectSE p {
+.App .projectSE p,
+.App .projectUX p {
 	padding: 10px;
 }
 
+.App .projectUX .nextSteps {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.App .projectUX .nextSteps h3 {
+	width: 100%;
+	margin: 25px;
+}

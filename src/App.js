@@ -27,10 +27,10 @@ const App = () => {
 					<Directory profiles={userProfiles} />
 				</Route>
 				<Route exact path='/profile/:user_id/0/:proj_id'>
-					<ProjectSE profiles={userProfiles}/>
+					<ProjectSE profiles={userProfiles} />
 				</Route>
 				<Route exact path='/profile/:user_id/1/:proj_id'>
-					<ProjectUX profiles={userProfiles}/>
+					<ProjectUX profiles={userProfiles} />
 				</Route>
 			</Switch>
 		</div>
