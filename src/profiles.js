@@ -14,8 +14,12 @@ const userProfiles = [
 				type: 0,
 				id: 1,
 				title: 'test title',
-				text: 'test text',
-				images: false,
+				outline: 'test text',
+				problem: '',
+				wrapUp: '',
+				wrapUpImg: '',
+				images: [],
+				links: [],
 			},
 		],
 		contact: '',
@@ -49,10 +53,18 @@ const userProfiles = [
 			{
 				type: 0,
 				id: 1,
-				title: 'My first project',
-				text:
+				title: 'My example project',
+				outline:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo turpis, dapibus eget lectus at, pellentesque aliquam tellus. Pellentesque ut pulvinar quam. Duis eget eros eu mauris iaculis bibendum. Etiam vulputate elementum augue, non iaculis arcu laoreet et. Mauris et vulputate lorem, in auctor orci. Fusce eget nibh eget lorem vulputate condimentum ornare fermentum magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean varius dui et faucibus porttitor. Ut sit amet vulputate orci. Vestibulum consequat arcu et metus dapibus, ut elementum neque volutpat.',
-				images: require('./assets/planetary_background.jpg').default,
+				problem:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo turpis, dapibus eget lectus at, pellentesque aliquam tellus. Pellentesque ut pulvinar quam. Duis eget eros eu mauris iaculis bibendum. Etiam vulputate elementum augue, non iaculis arcu laoreet et. Mauris et vulputate lorem, in auctor orci. Fusce eget nibh eget lorem vulputate condimentum ornare fermentum magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean varius dui et faucibus porttitor. Ut sit amet vulputate orci. Vestibulum consequat arcu et metus dapibus, ut elementum neque volutpat.',
+				wrapUp:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo turpis, dapibus eget lectus at, pellentesque aliquam tellus. Pellentesque ut pulvinar quam. Duis eget eros eu mauris iaculis bibendum.',
+				wrapUpImg: require('./assets/nebula.jpg').default,
+				images: [require('./assets/planetary_background.jpg').default],
+				links: [
+					'https://thesilentwars.netlify.app/', 'https://github.com/mrssilentwar/kenzie-student-portfolio',
+				],
 			},
 		],
 		contact: 'mrssilentwar@gmail.com',
@@ -76,18 +88,37 @@ const userProfiles = [
 			{
 				type: 1,
 				id: 1,
-				text: '',
-				briefImg: '',
+				problem: '',
+				problemImg: '',
 				outline: '',
-				outlineImg: '',
-				process: '',
-				processImg: '',
+				images: '',
+				process: [
+					{
+						text: '',
+						image: '',
+					},
+					{
+						text: '',
+						image: '',
+					},
+				],
 				outcome: '',
 				outcomeImg: '',
-				nextSteps: '',
-				nextStepsImg: '',
-				learned: '',
-				learnedImg: '',
+				nextSteps: [
+					{
+						text: '',
+						image: '',
+					},
+					{
+						text: '',
+						image: '',
+					},
+					{
+						text: '',
+						image: '',
+					},
+				],
+				links: [],
 			},
 		],
 		contact: 'rynetate@gmail.com',
@@ -142,18 +173,37 @@ const userProfiles = [
 			{
 				type: 1,
 				id: 1,
-				text: '',
-				briefImg: '',
+				problem: '',
+				problemImg: '',
 				outline: '',
-				outlineImg: '',
-				process: '',
-				processImg: '',
+				images: '',
+				process: [
+					{
+						text: '',
+						image: '',
+					},
+					{
+						text: '',
+						image: '',
+					},
+				],
 				outcome: '',
 				outcomeImg: '',
-				nextSteps: '',
-				nextStepsImg: '',
-				learned: '',
-				learnedImg: '',
+				nextSteps: [
+					{
+						text: '',
+						image: '',
+					},
+					{
+						text: '',
+						image: '',
+					},
+					{
+						text: '',
+						image: '',
+					},
+				],
+				links: [],
 			},
 		],
 		contact: 'jordan.burke394@gmail.com',

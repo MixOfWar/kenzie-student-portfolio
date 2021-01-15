@@ -7,6 +7,7 @@
 	padding: 0;
 	margin: 0;
 	font-size: 18px;
+	color: #00356b;
 }
 
 a {
@@ -179,4 +180,10 @@ img {
 	width: 100%;
 }
 
+
+/* ProjectSE */
+
+.App .projectSE p {
+	padding: 10px;
+}
 

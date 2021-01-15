@@ -41,12 +41,14 @@ const ProfileCard = styled.li`
 const Tab = styled.h2`
 	width: 25%;
 	padding: 10px;
-	color: white;
-	background: #00356b;
+	color: #00356b;
+	border: 1px solid #00356b;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 5px 5px 5px black;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+	svg {
+	}
 `;
 
 const EditButton = styled.button`
@@ -91,23 +93,53 @@ const ProjectCard = styled.li`
 const ContactSection = styled.section`
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	flex-flow: row nowrap;
+	justify-content: center;
 	align-items: stretch;
 	h2 {
 		width: 75%;
+	}
+	div {
+		width: 50%;
+	}
+	div:nth-of-type(2) {
+		text-align: center;
 	}
 `;
 
 const ProjectHero = styled.section`
 	width: 100%;
-  padding: 10px;
-  text-align: center;
-  h1 {
-    text-align: left;
-  }
-  .hero {
-    margin: auto;
-  }
+	padding: 10px;
+	text-align: center;
+	h1 {
+		text-align: left;
+	}
+	.hero {
+		margin: auto;
+	}
+`;
+
+const WrapUpSection = styled.section`
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	h2 {
+		width: 100%;
+		margin: 50px;
+		text-align: center;
+	}
+	img {
+		width: 50%;
+	}
+	p {
+		width: 50%;
+		text-align: center;
+	}
+`;
+
+const ProjectLinks = styled.section`
+	width: 100%;
+	text-align: center;
 `;
 
 export {
@@ -120,4 +152,6 @@ export {
 	ContactSection,
 	SkillList,
 	ProjectHero,
+	WrapUpSection,
+	ProjectLinks,
 };
