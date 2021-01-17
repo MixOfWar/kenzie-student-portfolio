@@ -204,3 +204,61 @@ img {
 	width: 100%;
 	margin: 25px;
 }
+
+/* Edit Portfolio */
+
+button {
+	background: #a6ffdc;
+	color: #00356b;
+	padding: 15px 30px;
+	margin: 25px auto;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.App .makeProfile .makeProfileHero {
+	text-align: center;
+	background: linear-gradient(180deg, #00356b 50%, #ffffff 50%);
+}
+
+.App .makeProfile .makeProfileHero h1 {
+	font-size: 28px;
+	color: white;
+}
+
+.App .makeProfile .formSection {
+	width: 90%;
+	margin: auto;
+}
+
+.App .makeProfile .formSection .shadow {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App .makeProfile .formContactSection {
+	text-align: center;
+}
+
+.App .makeProfile .formContactSection h3 {
+	background: #ffffff;
+	color: #00356b;
+	width: 100%;
+	margin: 0;
+	padding: 25px 15px;
+	text-align: left;
+}
+
+.App .makeProfile .formContactSection .colorContainer {
+	background: #94cdbd;
+	width: 100%;
+	padding: 15px;
+	text-align: left;
+}
+
+.App .makeProfile .formContactSection .colorContainer button {
+	background: #94cdbd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

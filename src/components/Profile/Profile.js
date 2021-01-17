@@ -18,7 +18,11 @@ const Profile = (props) => {
 	return (
 		<div className='profile'>
 			<section className='hero'>
-				{props.loggedIn.id === Number(props.match.params.id) ? <EditButton>Edit</EditButton> : null}
+				{props.loggedIn.id === Number(props.match.params.id) ? (
+					<Link to={`/edit/${thisUser.id}`}>
+						<EditButton>Edit</EditButton>{' '}
+					</Link>
+				) : null}
 				<div className='miniNav'>
 					<ul>
 						<li>Projects</li>
@@ -75,8 +79,7 @@ const Profile = (props) => {
 						Contact Me
 					</Tab>
 					<div>
-						<p>{thisUser.contact}</p>
-						<p>Website Link Here</p>
+						<p>{thisUser.contact && thisUser.contact.email}</p>
 					</div>
 				</div>
 				<div>

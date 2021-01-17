@@ -1,5 +1,3 @@
-import { FormatAlignCenter } from '@material-ui/icons';
-
 const userProfiles = [
 	{
 		id: 7426,
@@ -10,7 +8,7 @@ const userProfiles = [
 		about:
 			'Multi-talented creative individual with a deep desire for discovering new ideas, concepts, and efficient logical workflows',
 		highlights: 'Persevering in a time of uncertainty and anguish',
-		skills: ['Efficiency', 'Empathy', 'HTML', 'CSS', 'Video production', 'Music production'],
+		skills: [' Efficiency', ' Empathy', ' HTML', ' CSS', ' Video production', ' Music production'],
 		education: [],
 		projects: [
 			{
@@ -26,7 +24,11 @@ const userProfiles = [
 				links: [],
 			},
 		],
-		contact: 'fmsieck@gmail.com',
+		contact: {
+			phone: '',
+			email: 'fmsieck@gmail.com',
+			website: '',
+		},
 	},
 	{
 		id: 9181,
@@ -69,7 +71,11 @@ const userProfiles = [
 				links: ['https://thesilentwars.netlify.app/', 'https://github.com/mrssilentwar/kenzie-student-portfolio'],
 			},
 		],
-		contact: 'mrssilentwar@gmail.com',
+		contact: {
+			phone: '',
+			email: 'mrssilentwar@gmail.com',
+			website: '',
+		},
 	},
 	{
 		id: 528,
@@ -124,7 +130,11 @@ const userProfiles = [
 				links: [],
 			},
 		],
-		contact: 'rynetate@gmail.com',
+		contact: {
+			phone: '',
+			email: 'rynetate@gmail.com',
+			website: '',
+		},
 	},
 	{
 		id: 394,
@@ -208,7 +218,11 @@ const userProfiles = [
 				links: ['https://docs.google.com/presentation/d/1iIFPfuepp6efOr-AJnB2ja-wXy34qF7gZQR8WOtu6Qg/edit?usp=sharing'],
 			},
 		],
-		contact: 'jordan.burke394@gmail.com',
+		contact: {
+			phone: '',
+			email: 'jordan.burke394@gmail.com',
+			website: '',
+		},
 	},
 	{
 		id: 1129,
@@ -234,7 +248,11 @@ const userProfiles = [
 				links: [],
 			},
 		],
-		contact: '',
+		contact: {
+			phone: '',
+			email: '',
+			website: '',
+		},
 	},
 ];
 

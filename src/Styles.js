@@ -177,6 +177,32 @@ const NextStepsContainers = styled.div`
 	}
 `;
 
+const EditLabelAndInput = styled.label`
+	font-weight: 700;
+	width: 100%;
+	input,
+	TextField {
+		margin: 5px 0;
+		font-weight: 300;
+		color: #00356b;
+		padding: 35px 5px 10px 5px;
+	}
+`;
+
+const ContactInput = styled.label`
+	font-weight: 700;
+	width: 100%;
+	input,
+	TextField {
+		margin: 5px 0;
+		font-weight: 300;
+		color: #00356b;
+		background: white;
+		padding: 35px 5px 10px 5px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+	}
+`;
+
 export {
 	DirectoryHero,
 	ProfileCard,
@@ -191,4 +217,6 @@ export {
 	ProjectLinks,
 	PictureTextSection,
 	NextStepsContainers,
+	EditLabelAndInput,
+	ContactInput,
 };

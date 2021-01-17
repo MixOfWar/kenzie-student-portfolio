@@ -17,7 +17,7 @@ const App = () => {
 		<div className='App'>
 			<Header loggedIn={loggedIn} />
 			<Switch>
-				<Route exact path='/edit'>
+				<Route exact path='/edit/:id'>
 					<MakeProfile profiles={userProfiles} />
 				</Route>
 				<Route exact path='/profile/:id'>
