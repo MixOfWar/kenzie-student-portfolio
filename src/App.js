@@ -11,8 +11,10 @@ import ProjectUX from './components/Projects/ProjectUX.js';
 import Directory from './components/Directory/Directory.js';
 
 const App = () => {
-	const [userProfiles, setUserProfiles] = useState(profiles);
-	const [loggedIn, setLoggedIn] = useState(profiles[0]);
+	// eslint-disable-next-line
+	const userProfiles = useState(profiles);
+	// eslint-disable-next-line
+	const loggedIn = useState(profiles[0]);
 
 	return (
 		<div className='App'>
