@@ -11,15 +11,13 @@ import ProjectUX from './components/Projects/ProjectUX.js';
 import Directory from './components/Directory/Directory.js';
 
 const App = () => {
-	// eslint-disable-next-line
-	const userProfiles = useState(profiles);
-	// eslint-disable-next-line
-	const loggedIn = useState({
+	const userProfiles = profiles;
+	const loggedIn = {
 		id: 7426,
 		name: 'Fredo Sieck',
 		image: require('./assets/fms-avatar.jpeg').default,
 		role: 'UX Designer / Front End Dev',
-	});
+	};
 
 	return (
 		<div className='App'>

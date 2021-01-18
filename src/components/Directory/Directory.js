@@ -13,14 +13,8 @@ const Directory = ({ profiles }) => {
 			</DirectoryHero>
 			<section className='students'>
 				<div className='spotlightImgs'>
-					<img
-						src={require('../../assets/UXSpotlight.png').default}
-						alt='UX Spotlight Portfolio'
-					/>
-					<img
-						src={require('../../assets/SESpotlight.png').default}
-						alt='SE Spotlight Portfolio'
-					/>
+					<img src={require('../../assets/UXSpotlight.png').default} alt='UX Spotlight Portfolio' />
+					<img src={require('../../assets/SESpotlight.png').default} alt='SE Spotlight Portfolio' />
 				</div>
 				<ul>
 					{profiles.map((profile) => (
@@ -38,7 +32,7 @@ const Directory = ({ profiles }) => {
 									<br />
 									<br />
 									<div className='aboutInfo'>
-										<p>{profile.about.substring(0, 148)}</p>
+										<p>{profile.about && profile.about.substring(0, 148)}</p>
 									</div>
 								</div>
 							</ProfileCard>
