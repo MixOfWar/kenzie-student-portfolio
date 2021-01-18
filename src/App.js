@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import profiles from './profiles.js';
 import Header from './components/Header/Header.js';
+import MarketingPage from './components/MarketingPage/MarketingPage.js';
 import MakeProfile from './components/MakeProfile/MakeProfile.js';
 import Profile from './components/Profile/Profile.js';
 import ProjectSE from './components/Projects/ProjectSE.js';
@@ -11,12 +12,15 @@ import Directory from './components/Directory/Directory.js';
 
 const App = () => {
 	const [userProfiles, setUserProfiles] = useState(profiles);
-	const [loggedIn, setLoggedIn] = useState(userProfiles[0]);
+	const [loggedIn, setLoggedIn] = useState(profiles[0]);
 
 	return (
 		<div className='App'>
 			<Header loggedIn={loggedIn} />
 			<Switch>
+				<Route exact path='/'>
+					<MarketingPage />
+				</Route>
 				<Route exact path='/edit/:id'>
 					<MakeProfile profiles={userProfiles} />
 				</Route>

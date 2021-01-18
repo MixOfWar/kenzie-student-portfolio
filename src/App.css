@@ -274,3 +274,285 @@ button {
 	justify-content: center;
 	align-items: center;
 }
+
+/* Marketing Page */
+
+.App .marketing section {
+	width: 100%;
+	max-width: 1400px;
+	margin: 50px auto;
+	padding: 0;
+}
+
+.App .marketing button {
+	background: #fcc44c;
+	color: black;
+}
+
+.App .marketing h1 {
+	font-size: 32px;
+	text-align: center;
+}
+
+.App .marketing h2 {
+	font-size: 28px;
+	text-align: center;
+}
+
+.App .marketing h3 {
+	font-size: 24px;
+	text-align: center;
+}
+
+.App .marketing p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.App .marketing .hero {
+	background-image: url('./assets/kenzie_logo_Trans.png'), url('./assets/marketing_header.jpg');
+	background-position: 10% 20%, center;
+	background-size: 100px 100px, contain;
+	background-repeat: no-repeat;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.App .marketing .hero div {
+	width: 60%;
+	background: white;
+	border: 2px solid #A6FFDC;
+}
+
+.App .marketing .hero h1 {
+	font-size: 1.2em;
+}
+
+.App .marketing .hero img {
+	align-self: flex-start;
+	justify-self: flex-start;
+	width: 50px;
+}
+
+.App .marketing .showcase {
+	background-color: #94cdbd;
+	background-image: linear-gradient(0, rgba(148, 205, 189, 0.3), rgba(148, 205, 189, 0.3)),
+		url('./assets/pexels-tyler-hendy-53265.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.App .marketing .showcase .text {
+	width: 45%;
+	height: 150px;
+	text-align: center;
+}
+
+.App .marketing .showcase .text img {
+	width: 250px;
+}
+
+.App .marketing .smarter {
+	background: linear-gradient(180deg, #00356b 50%, #ffffff 50%);
+}
+
+.App .marketing .smarter .header {
+	background: rgba(242, 244, 248, 0.2);
+	margin: 0;
+	padding: 25px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.App .marketing .smarter .header h2 {
+	color: white;
+	font-size: 38px;
+}
+
+.App .marketing .smarter .flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 50px auto;
+}
+
+.App .marketing .smarter .flex .learn,
+.App .marketing .smarter .flex .build,
+.App .marketing .smarter .flex .present {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: white;
+	margin: 25px auto;
+}
+
+.App .marketing .smarter .footer {
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	height: 50px;
+	background: #94cdbd;
+}
+
+.App .marketing .smarter .flex div img {
+	width: 100%;
+	height: 400px;
+}
+
+.App .marketing .plug {
+	background-color: #f2f4f8;
+	padding: 25px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.App .marketing .plug .text {
+	width: 50%;
+	padding: 10%;
+	line-height: 60px;
+}
+
+.App .marketing .plug .text p {
+	font-size: 28px;
+	text-decoration: bold;
+}
+
+.App .marketing .plug img {
+	width: 50%;
+}
+
+.App .marketing .develop {
+	background: linear-gradient(180deg, #305b87 50%, #00356b 50%);
+	color: white;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.App .marketing .develop .rowOne,
+.App .marketing .develop .rowTwo,
+.App .marketing .develop .rowThree {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.App .marketing .develop .rowOne .circle,
+.App .marketing .develop .rowTwo .circle,
+.App .marketing .develop .rowThree .circle {
+	height: 150px;
+	width: 150px;
+	margin: 0 10px;
+	border: 2px solid #00356b;
+	border-radius: 100%;
+	background: black;
+}
+
+.App .marketing .develop .rowOne .photo1 {
+	background: url('./assets/maria.jpg');
+	background-position: center;
+	background-size: 200px;
+}
+.App .marketing .develop .rowOne .photo2 {
+	background: url('./assets/gabby.jpg');
+	background-position: center;
+	background-size: 200px;
+}
+.App .marketing .develop .rowTwo .photo3 {
+	background: url('./assets/pixabay.jpg');
+	background-position: center;
+	background-size: 200px;
+}
+.App .marketing .develop .rowTwo .photo4 {
+	background: url('./assets/kampus.jpg');
+	background-position: center;
+	background-size: 200px;
+}
+.App .marketing .develop .rowThree .photo5 {
+	background: url('./assets/masha.jpg');
+	background-position: center;
+	background-size: 200px;
+}
+.App .marketing .develop .rowThree .photo6 {
+	background: url('./assets/zen.jpg');
+	background-position: center;
+	background-size: 200px;
+}
+
+.App .marketing .develop p {
+	color: white;
+	padding: 10px;
+	line-height: 35px;
+	font-weight: bold;
+}
+
+.App .marketing .final {
+	background-color: #f2f4f8;
+	padding: 25px 0;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.App .marketing .final h2 {
+	font-size: 45px;
+	line-height: 150px;
+}
+
+.App .marketing .footer {
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	height: 100px;
+	background: #94cdbd;
+}
+
+@media (min-width: 750px) {
+	.App .marketing .showcase .text img {
+		width: 300px;
+	}
+	.App .marketing .smarter .flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 50px auto;
+	}
+
+	.App .marketing .smarter .flex .learn,
+	.App .marketing .smarter .flex .build,
+	.App .marketing .smarter .flex .present {
+		width: 32%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.App .marketing .plug .text p {
+		font-size: 32px;
+	}
+
+	.App .marketing .develop .rowOne .circle,
+	.App .marketing .develop .rowTwo .circle,
+	.App .marketing .develop .rowThree .circle {
+		height: 200px;
+		width: 200px;
+	}
+}
