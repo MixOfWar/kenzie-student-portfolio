@@ -179,6 +179,19 @@ img {
 
 .App .Directory .students {
 	width: 100%;
+	max-width: 1400px;
+}
+
+.App .Directory .students .spotlightImgs {
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+
+.App .Directory .students .spotlightImgs img {
+	width: 100%;
+	max-width: 1400px;
+	text-align: center;
 }
 
 .App .Directory .students ul {
@@ -261,4 +274,3 @@ button {
 	justify-content: center;
 	align-items: center;
 }
-

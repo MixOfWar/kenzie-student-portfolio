@@ -12,6 +12,16 @@ const Directory = ({ profiles }) => {
 				</h2>
 			</DirectoryHero>
 			<section className='students'>
+				<div className='spotlightImgs'>
+					<img
+						src={require('../../assets/UXSpotlight.png').default}
+						alt='UX Spotlight Portfolio'
+					/>
+					<img
+						src={require('../../assets/SESpotlight.png').default}
+						alt='SE Spotlight Portfolio'
+					/>
+				</div>
 				<ul>
 					{profiles.map((profile) => (
 						<Link to={`/profile/${profile.id}`}>
