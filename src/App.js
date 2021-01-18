@@ -14,7 +14,12 @@ const App = () => {
 	// eslint-disable-next-line
 	const userProfiles = useState(profiles);
 	// eslint-disable-next-line
-	const loggedIn = useState(profiles[0]);
+	const loggedIn = useState({
+		id: 7426,
+		name: 'Fredo Sieck',
+		image: require('./assets/fms-avatar.jpeg').default,
+		role: 'UX Designer / Front End Dev',
+	});
 
 	return (
 		<div className='App'>

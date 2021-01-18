@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import fmsavatar from '../../assets/fms-avatar.jpeg';
 const logo = require('../../assets/Kenzie_Showcase_Logo.png').default;
 
 const Header = ({ loggedIn }) => {
@@ -19,7 +20,7 @@ const Header = ({ loggedIn }) => {
 						My Assets
 					</NavLink>
 				</ul>
-				<img className='loggedAvatar' src={loggedIn.image} alt='user avatar' />
+				<img className='loggedAvatar' src={fmsavatar} alt='user avatar' />
 			</nav>
 		</div>
 	);
