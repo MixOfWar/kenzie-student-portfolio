@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import Kenzie_Showcase_Logo from '../../assets/Kenzie_Showcase_Logo.png';
 import learn from '../../assets/learn.jpg';
@@ -6,9 +6,11 @@ import build from '../../assets/build.jpg';
 import present from '../../assets/present.jpg';
 import plug_and_play_screenshot from '../../assets/plug_and_play_screenshot.PNG';
 
-
-
 const MarketingPage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className='marketing'>
 			<section className='hero'>

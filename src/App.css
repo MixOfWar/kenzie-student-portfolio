@@ -63,11 +63,13 @@ img {
 .App .header {
 	width: 100%;
 	padding: 10px;
-	position: sticky;
+	position: fixed;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	background: white;
+	z-index: 1;
 }
 
 .App .header input {
@@ -123,6 +125,9 @@ img {
 }
 
 /* Profile */
+.App .profile {
+	margin: 100px auto;
+}
 .App .profile .hero {
 	display: flex;
 	flex-flow: row wrap;
@@ -173,6 +178,10 @@ img {
 
 /* Directory */
 
+.App .Directory {
+	margin: 100px auto;
+}
+
 .App .Directory section {
 	padding: 10px;
 }
@@ -201,6 +210,11 @@ img {
 
 /* Project */
 
+.App .projectSE,
+.App .projectUX {
+	margin: 100px auto;
+}
+
 .App .projectSE p,
 .App .projectUX p {
 	padding: 10px;
@@ -219,6 +233,12 @@ img {
 }
 
 /* Edit Portfolio */
+
+.App .makeProfile {
+	margin: 100px auto;
+	width: 100%;
+	max-width: 1400px;
+}
 
 button {
 	background: #a6ffdc;
@@ -324,7 +344,7 @@ button {
 .App .marketing .hero div {
 	width: 60%;
 	background: white;
-	border: 2px solid #A6FFDC;
+	border: 2px solid #a6ffdc;
 }
 
 .App .marketing .hero h1 {

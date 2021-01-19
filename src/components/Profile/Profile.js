@@ -15,19 +15,23 @@ const Profile = (props) => {
 		// eslint-disable-next-line
 	}, [props.match.params.id]);
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className='profile'>
 			<section className='hero'>
-				{props.loggedIn.id === Number(props.match.params.id) ? (
-					<Link to={`/edit/${thisUser.id}`}>
-						<EditButton>Edit</EditButton>{' '}
-					</Link>
-				) : null}
 				<div className='miniNav'>
 					<ul>
 						<li>Projects</li>
 						<li>Resume</li>
 						<li>Contact Me</li>
+						{props.loggedIn.id === Number(props.match.params.id) ? (
+							<Link to={`/edit/${thisUser.id}`}>
+								<EditButton>Edit</EditButton>{' '}
+							</Link>
+						) : null}
 					</ul>
 				</div>
 				<div className='bio'>

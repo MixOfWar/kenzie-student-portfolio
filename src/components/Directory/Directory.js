@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { DirectoryHero, ProfileCard } from '../../Styles.js';
 
 const Directory = ({ profiles }) => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className='Directory'>
 			<DirectoryHero>

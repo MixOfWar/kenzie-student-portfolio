@@ -13,6 +13,11 @@ const ProjectUX = (props) => {
 		);
 		// eslint-disable-next-line
 	}, [props.match.params.user_id, props.match.params.proj_id]);
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className='projectUX'>
 			<ProjectHero>

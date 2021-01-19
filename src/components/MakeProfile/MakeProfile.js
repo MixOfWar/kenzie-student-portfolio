@@ -16,6 +16,10 @@ const MakeProfile = (props) => {
 		// eslint-disable-next-line
 	}, [props.match.params.id]);
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const handleChange = (event) => {
 		const name = event.target.name;
 		const value = event.target.value;
